@@ -1,0 +1,5 @@
+.home__component {
+    padding: 30px 100px;
+    background: var(--background-color);
+    height: 100vh;
+}

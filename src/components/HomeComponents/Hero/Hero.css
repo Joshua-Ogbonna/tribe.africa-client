@@ -1,0 +1,22 @@
+.hero__component {
+  margin-top: 120px;
+  text-align: center;
+}
+.hero__component h1 {
+  font-size: 60px;
+  font-family: var(--secondary-font);
+  width: 800px;
+  font-weight: 700;
+  /* height: 150px; */
+  margin: 20px auto;
+}
+.hero__component p {
+  font-family: var(--tertiary-font);
+  font-size: 24px;
+  width: 900px;
+  margin: 20px auto;
+}
+.hero__component button {
+  width: 300px;
+  height: 60px;
+}

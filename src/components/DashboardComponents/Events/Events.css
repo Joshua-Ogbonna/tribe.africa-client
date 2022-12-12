@@ -1,0 +1,35 @@
+.create__events .create__event {
+  width: 600px;
+  margin: auto;
+}
+.create__event .cover__image {
+  position: relative;
+}
+.create__event .cover__image img {
+  width: 100%;
+}
+.create__event .cover__image div {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  display: flex;
+  padding: 12px 30px;
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+  background-color: var(--text-color);
+  color: var(--whitish-color);
+  width: 250px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.create__event .event__details {
+  margin-top: 40px;
+}
+.create__event .event__details .event__name {
+  font-size: 40px;
+  height: 50px;
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  border-radius: 0;
+  font-weight: 600;
+}

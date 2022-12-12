@@ -1,0 +1,48 @@
+.auth {
+  background: var(--background-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth__section {
+  width: 700px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+.auth .auth__section form {
+  margin-top: 30px;
+}
+.auth .auth__section form h5 {
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.auth .auth__section .form__area {
+  margin-bottom: 20px;
+}
+.auth .auth__section form .form__area label {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.auth .auth__section form .form__area button {
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+}
+.auth .auth__section form .alt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.auth .auth__section form .alt div {
+  font-family: var(--primary-font) !important;
+  font-size: 14px;
+}
+.auth .auth__section form .alt div a {
+  color: var(--secondary-color);
+}

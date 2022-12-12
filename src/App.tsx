@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "./App.css";
+import pageLoader from "./HOCs/pageLoader";
+
+// Home Component
+const Home = pageLoader(lazy(() => import("./pages/Home")));
+// Auth Component
+const SignUp = pageLoader(lazy(() => import("./pages/Auth/SignUp")))
+const Login = pageLoader(lazy(() => import("./pages/Auth/Login")))
+
+// Dashboard Components
+const Dashboard = pageLoader(lazy(() => import("./pages/Dashboard")))
+const CreateEvent = pageLoader(lazy(() => import("./components/DashboardComponents/Events/CreateEvents")))
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/onboard" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+
+          {/* Dashboard */}
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="events/create-event" element={<CreateEvent />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

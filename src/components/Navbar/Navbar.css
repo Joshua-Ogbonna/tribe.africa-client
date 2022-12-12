@@ -1,0 +1,38 @@
+.navbar__component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: var(--white-color);
+  border-radius: 10px;
+}
+.navbar__component ul {
+  display: flex;
+  align-items: center;
+}
+.navbar__component .middle li {
+  margin: 0 20px;
+}
+.navbar__component .last li {
+  margin-left: 20px;
+}
+.navbar__component .layer li a {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  font-weight: 400;
+}
+.navbar__component .last button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-family: var(--secondary-font);
+  font-size: 15px;
+  background: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+.navbar__component .layer {
+  margin-top: 20px;
+}
