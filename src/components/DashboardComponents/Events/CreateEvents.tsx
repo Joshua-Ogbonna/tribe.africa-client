@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../../Navbar";
 
-import Image1 from "../../../assets/images/image-1.avif";
-import Image2 from "../../../assets/images/image-2.avif";
-import Image3 from "../../../assets/images/image-3.avif";
-import Image4 from "../../../assets/images/image-4.avif";
-import Image5 from "../../../assets/images/image-5.avif";
-
 import "./Events.css";
 import { Input } from "reactstrap";
 
-const images = [Image1, Image2, Image3, Image4, Image5];
+import { images } from "../../../assets/data"
 
 type IType = "physical" | "virtual";
 type IAccess = "free" | "paid";
@@ -24,7 +18,10 @@ const CreateEvents = () => {
 
   return (
     <div className="create__events">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="dashboard__header">
+        <h3>Create Event</h3>
+      </div>
 
       {/* Create Event Container */}
       <div className="create__event">
@@ -47,6 +44,10 @@ const CreateEvents = () => {
               placeholder="Mid-night Review"
               className="event__name"
             />
+          </div>
+          <div className="form__area">
+            <label htmlFor="eventDescription">Event Description</label>
+            <Input type="textarea"  />
           </div>
           <div className="form__area">
             <label htmlFor="eventType">Event Type</label>

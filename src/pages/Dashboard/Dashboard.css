@@ -1,0 +1,71 @@
+.dashboard__component {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+.dashboard__component .sidebar {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  /* padding-left: 10px !important; */
+  /* border-right: 1px solid var(--text-color); */
+}
+.dashboard__component .sidebar .brand {
+  padding: 10px 20px;
+}
+.dashboard__component .sidebar .middle {
+  margin: 50px 0;
+}
+.dashboard__component .sidebar .bottom {
+  position: relative;
+  top: 100px;
+}
+.dashboard__component .sidebar ul li {
+  padding: 10px 20px;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%;
+  position: relative;
+}
+.dashboard__component .sidebar ul li a {
+  color: var(--text-color);
+  /* width: 100%; */
+}
+.dashboard__component .sidebar ul li .circle__active {
+  position: absolute;
+  right: 0;
+  font-size: 4px;
+  top: 20px;
+  color: var(--tertiary-color);
+  font-weight: 600;
+  display: none;
+}
+.dashboard__component .sidebar ul li a i {
+  width: 8%;
+}
+.dashboard__component .main__outlet {
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.dashboard__component .sidebar,
+.dashboard__component .main__outlet {
+  padding: 30px;
+}
+.dashboard__component .sidebar ul .active__list a {
+  color: var(--black-color);
+}
+.dashboard__component .sidebar ul .active__list .circle__active {
+  display: block;
+}
+.dashboard__header {
+  margin-bottom: 30px;
+}
+.dashboard__header h3 {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  font-weight: 600;
+}

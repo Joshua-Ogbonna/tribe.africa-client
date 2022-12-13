@@ -1,0 +1,19 @@
+.empty__option {
+    width: 400px;
+    margin: 30px auto;
+    text-align: center;
+}
+.empty__option i {
+    font-size: 30px;
+}
+.empty__option p {
+    font-size: 14px;
+    margin: 20px 0;
+    font-family: var(--primary-font);
+}
+.empty__option button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-family: var(--primary-font);
+}

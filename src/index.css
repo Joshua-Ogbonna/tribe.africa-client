@@ -31,3 +31,9 @@
   outline: 0;
   border: 1px solid var(--primary-color);;
 }
+.button-sm {
+  width: 200px;
+  height: 38px;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+}

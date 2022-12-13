@@ -1,0 +1,21 @@
+.dashboard__home .salutation__head {
+  margin-bottom: 40px;
+}
+.dashboard__home .salutation__head span {
+  font-family: var(--primary-font);
+  font-size: 20px;
+}
+.dashboard__home .salutation__head h3 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.dashboard__home .section {
+  width: 100%;
+  height: 250px;
+}
+.dashboard__home .section h5 {
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}

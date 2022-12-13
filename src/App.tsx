@@ -12,6 +12,8 @@ const Login = pageLoader(lazy(() => import("./pages/Auth/Login")))
 
 // Dashboard Components
 const Dashboard = pageLoader(lazy(() => import("./pages/Dashboard")))
+const DashboardHome = pageLoader(lazy(() => import("./components/DashboardComponents/Home")))
+const Events = pageLoader(lazy(() => import("./components/DashboardComponents/Events")))
 const CreateEvent = pageLoader(lazy(() => import("./components/DashboardComponents/Events/CreateEvents")))
 
 function App() {
@@ -25,6 +27,10 @@ function App() {
 
           {/* Dashboard */}
           <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="" element={<DashboardHome />} />
+
+            {/* Events */}
+            <Route path="events" element={<Events />} />
             <Route path="events/create-event" element={<CreateEvent />} />
           </Route>
         </Routes>
