@@ -73,3 +73,50 @@
 .events__page .event .event__details p i {
   margin-right: 5px;
 }
+
+/* Single event styles */
+.single__event .event__head .details h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.single__event .event__head .details p, .single__event .event__head .shareable__link p {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 10px;
+}
+.single__event .event__head .shareable__link .link {
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.single__event .event__head .shareable__link .link span {
+  margin-bottom: 3px;
+  color: var(--text-color);
+}
+.single__event .event__head .shareable__link .link i {
+  cursor: pointer;
+}
+.single__event .event__navigation {
+  margin: 20px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.single__event .event__navigation a {
+  color: var(--text-color);
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-weight: 600;
+}
+.single__event .event__navigation .active__link {
+  color: var(--tertiary-color);
+  border-bottom: 3px solid var(--tertiary-color);
+}
+.single__event .event__navigation a i {
+  margin-right: 10px;
+}

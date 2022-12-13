@@ -29,3 +29,5 @@ export const events: IEvent[] = [
         category: "free"
     }
 ]
+
+export const guests = []

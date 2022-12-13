@@ -13,8 +13,12 @@ const Login = pageLoader(lazy(() => import("./pages/Auth/Login")))
 // Dashboard Components
 const Dashboard = pageLoader(lazy(() => import("./pages/Dashboard")))
 const DashboardHome = pageLoader(lazy(() => import("./components/DashboardComponents/Home")))
+
+// Events
 const Events = pageLoader(lazy(() => import("./components/DashboardComponents/Events")))
 const CreateEvent = pageLoader(lazy(() => import("./components/DashboardComponents/Events/CreateEvents")))
+const Event = pageLoader(lazy(() => import("./components/DashboardComponents/Events/Event")))
+const Guests = pageLoader(lazy(() => import("./components/DashboardComponents/Events/components/Guests")))
 
 function App() {
   return (
@@ -32,6 +36,9 @@ function App() {
             {/* Events */}
             <Route path="events" element={<Events />} />
             <Route path="events/create-event" element={<CreateEvent />} />
+            <Route path="events/event/:id" element={<Event />}>
+              <Route path="" element={<Guests />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

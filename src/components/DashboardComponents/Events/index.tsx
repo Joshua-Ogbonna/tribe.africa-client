@@ -23,7 +23,7 @@ const Events = () => {
             </button>
           </div>
           {events.map((event, idx) => (
-            <Link to="">
+            <Link to={`/dashboard/events/event/${idx + 1}`}>
               <div className="event flex__two shadow-sm" key={idx}>
                 <div className="event__head flex__one">
                   <img
