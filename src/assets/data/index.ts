@@ -1,12 +1,11 @@
 import { IEvent } from "../../interfaces";
 
 import Image1 from "../images/image-1.avif";
-import Image2 from "../images/image-2.avif";
 import Image3 from "../images/image-3.avif";
 import Image4 from "../images/image-4.avif";
 import Image5 from "../images/image-5.avif";
 
-export const images = [Image1, Image2, Image3, Image4, Image5];
+export const images = [Image1, Image3, Image4, Image5];
 
 // Events Data
 export const events: IEvent[] = [

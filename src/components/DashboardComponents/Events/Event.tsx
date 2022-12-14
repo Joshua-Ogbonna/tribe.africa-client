@@ -8,6 +8,10 @@ const Event = () => {
   const { pathname } = useLocation();
   const splitPath = pathname.split("/");
 
+  const handleActiveClass = (route: string) => {
+    return splitPath[5] === route ? "active__link" : "";
+  };
+
   return (
     <div className="single__event">
       <div className="event__head flex__two">
@@ -34,15 +38,21 @@ const Event = () => {
         >
           <i className="fa-solid fa-users"></i> Guests
         </Link>
-        <Link to={`/dashboard/events/event/${id}/details`}>
+        <Link
+          className={handleActiveClass("details")}
+          to={`/dashboard/events/event/${id}/details`}
+        >
           <i className="fa-solid fa-circle-info"></i> Details
         </Link>
-        {/* Remember to add delete event in settings tab */}
-        <Link to={`/dashboard/events/event/${id}/settings`}>
-          <i className="fa-solid fa-gear"></i> Settings
-        </Link>
-        <Link to={`/dashboard/events/event/${id}/emails`}>
+        <Link
+          className={handleActiveClass("emails")}
+          to={`/dashboard/events/event/${id}/emails`}
+        >
           <i className="fa-solid fa-envelope"></i> Emails
+        </Link>
+        {/* Remember to add delete event in settings tab */}
+        <Link className={handleActiveClass("settings")} to={`/dashboard/events/event/${id}/settings`}>
+          <i className="fa-solid fa-gear"></i> Settings
         </Link>
       </div>
 

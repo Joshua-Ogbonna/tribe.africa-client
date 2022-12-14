@@ -1,0 +1,67 @@
+.settings__component {
+  width: 1000px;
+  /* background-color: var(--background-color); */
+  border-radius: 4px;
+  padding: 20px;
+}
+/* .settings__component .section h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+} */
+.settings__component .access__levels {
+  display: flex;
+  flex-wrap: wrap;
+}
+.settings__component .section .access__type {
+  padding: 20px;
+  width: 400px;
+  min-height: 200px;
+}
+.settings__component .section .access__type .head {
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+}
+.settings__component .section .access__type .head div {
+  font-size: 14px;
+  font-weight: 600;
+}
+.settings__component .section .access__type .head i {
+  font-size: 12px;
+  color: var(--white-color);
+  padding: 8px;
+  border-radius: 99px;
+}
+.settings__component .section .display__guest .head i {
+  /* display: flex; */
+  background: var(--tertiary-color);
+}
+.settings__component .section .registration .head i {
+  background: var(--secondary-color);
+}
+.settings__component .section .event__capacity .head i {
+  background: #472183;
+}
+.settings__component .section .cancel__event .head i {
+  background-color: var(--tertiary-color);
+}
+.settings__component .section .access__type .mid {
+  margin: 20px 0 0;
+}
+.settings__component .section .access__type .mid p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.settings__component .section .access__type .body {
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  /* height: 80px; */
+}
+.settings__component .section .access__type .cancel__button {
+    margin-top: 10px;
+    width: 100px;
+    height: 38px;
+    font-size: 14px;
+    background: var(--tertiary-color);
+}

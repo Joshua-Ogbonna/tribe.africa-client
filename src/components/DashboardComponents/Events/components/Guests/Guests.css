@@ -21,3 +21,60 @@
     color: var(--text-color);
     padding: 20px 10px;
 }
+.guests__component .flex__three .form__area {
+    width: 50%;
+}
+.guests__component .flex__three .referral__link {
+    width: 40%;
+}
+.guests__component .flex__three .referral__link h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.guests__component .flex__three .referral__link p {
+    font-size: 13px;
+    margin: 20px 0;
+    /* line-height: 10px; */
+}
+.guests__component .flex__three .referral__link .socials i {
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.guests__component .section .admins {
+    gap: 40px;
+    padding-bottom: 30px;
+}
+.guests__component .section .admins .admin {
+    width:200px;
+    height: 70px;
+    gap: 20px;
+    cursor: pointer;
+}
+.guests__component .section .admins .admin img, .guests__component .section .admins .admin .mock__image  {
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+}
+.guests__component .section .admins .admin h5 {
+    font-size: 14px;
+    line-height: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-top: 25px; */
+}
+.guests__component .section .admins .admin p {
+    color: var(--text-color);
+    font-size: 12px;
+    line-height: 0;
+}
+.guests__component .section .admins .admin .mock__image {
+    background: #EEEEEE;
+}
+.guests__component .section .admins .add__admin {
+    background: #FAF8F1;
+}
+.guests__component .section .admins .add__admin:hover {
+    background: var(--white-color);
+}

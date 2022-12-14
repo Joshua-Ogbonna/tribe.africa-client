@@ -38,3 +38,11 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+.flex__three {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+:where(.css-dev-only-do-not-override-26rdvq).ant-switch.ant-switch-checked {
+  background-color: var(--primary-color) !important;
+}
