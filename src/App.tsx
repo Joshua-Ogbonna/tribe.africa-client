@@ -7,19 +7,46 @@ import pageLoader from "./HOCs/pageLoader";
 // Home Component
 const Home = pageLoader(lazy(() => import("./pages/Home")));
 // Auth Component
-const SignUp = pageLoader(lazy(() => import("./pages/Auth/SignUp")))
-const Login = pageLoader(lazy(() => import("./pages/Auth/Login")))
+const SignUp = pageLoader(lazy(() => import("./pages/Auth/SignUp")));
+const Login = pageLoader(lazy(() => import("./pages/Auth/Login")));
 
 // Dashboard Components
-const Dashboard = pageLoader(lazy(() => import("./pages/Dashboard")))
-const DashboardHome = pageLoader(lazy(() => import("./components/DashboardComponents/Home")))
+const Dashboard = pageLoader(lazy(() => import("./pages/Dashboard")));
+const DashboardHome = pageLoader(
+  lazy(() => import("./components/DashboardComponents/Home"))
+);
 
 // Events
-const Events = pageLoader(lazy(() => import("./components/DashboardComponents/Events")))
-const CreateEvent = pageLoader(lazy(() => import("./components/DashboardComponents/Events/CreateEvents")))
-const Event = pageLoader(lazy(() => import("./components/DashboardComponents/Events/Event")))
-const Guests = pageLoader(lazy(() => import("./components/DashboardComponents/Events/components/Guests")))
-const Settings = pageLoader(lazy(() => import("./components/DashboardComponents/Events/components/Settings")))
+const Events = pageLoader(
+  lazy(() => import("./components/DashboardComponents/Events"))
+);
+const CreateEvent = pageLoader(
+  lazy(() => import("./components/DashboardComponents/Events/CreateEvents"))
+);
+const Event = pageLoader(
+  lazy(() => import("./components/DashboardComponents/Events/Event"))
+);
+const Guests = pageLoader(
+  lazy(
+    () => import("./components/DashboardComponents/Events/components/Guests")
+  )
+);
+const Settings = pageLoader(
+  lazy(
+    () => import("./components/DashboardComponents/Events/components/Settings")
+  )
+);
+
+// Tribes
+const Tribes = pageLoader(
+  lazy(() => import("./components/DashboardComponents/Tribes"))
+);
+const CreateTribe = pageLoader(
+  lazy(() => import("./components/DashboardComponents/Tribes/CreateTribe"))
+);
+
+// Tribe Dashboard
+const Tribe = pageLoader(lazy(() => import("./pages/Tribe")));
 
 function App() {
   return (
@@ -41,7 +68,12 @@ function App() {
               <Route path="" element={<Guests />} />
               <Route path="settings" element={<Settings />} />
             </Route>
+            {/* Tribes */}
+            <Route path="tribes" element={<Tribes />} />
+            <Route path="tribes/create" element={<CreateTribe />} />
           </Route>
+          {/* Tribe */}
+          <Route path="tribe/:id" element={<Tribe />} />
         </Routes>
       </BrowserRouter>
     </div>

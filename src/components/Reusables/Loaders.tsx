@@ -27,7 +27,7 @@ export const UtilsLoader = () => {
         justifyContent: "center",
       }}
     >
-      <Loading type="spin" width={30} height={30} color="#ffffff" />;
+      <Loading type="spin" width={30} height={30} color="#ffffff" />
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import axios from "axios"
+
 export const getGreeting = () => {
     let time = new Date();
     switch (time.getHours()) {
@@ -24,3 +26,8 @@ export const getGreeting = () => {
         return "Evening 🌉";
     }
   };
+
+// Helper for post requests
+export const post = (url: string, body: any) => {
+  return axios.post(url, body)
+}

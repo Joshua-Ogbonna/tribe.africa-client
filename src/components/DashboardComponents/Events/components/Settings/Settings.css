@@ -11,11 +11,13 @@
 .settings__component .access__levels {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .settings__component .section .access__type {
   padding: 20px;
   width: 400px;
   min-height: 200px;
+  margin-bottom: 10px;
 }
 .settings__component .section .access__type .head {
   margin-bottom: 20px;

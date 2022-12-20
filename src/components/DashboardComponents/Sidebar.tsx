@@ -8,6 +8,10 @@ const Sidebar = () => {
   const splitPath = pathname.split("/");
   console.log(splitPath);
 
+  const activeClass = (list: string) => {
+    return splitPath[2] === list ? "active__list" : ""
+  }
+
   return (
     <div className="sidebar">
       <div className="top">
@@ -28,8 +32,8 @@ const Sidebar = () => {
             </Link>
             <i className="fa-solid fa-circle circle__active"></i>
           </li>
-          <li>
-            <Link to="">
+          <li className={activeClass("tribes")}>
+            <Link to="/dashboard/tribes">
               <i className="fa-solid fa-users"></i> Tribes
             </Link>
             <i className="fa-solid fa-circle circle__active"></i>

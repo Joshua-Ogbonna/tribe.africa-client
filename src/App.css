@@ -43,6 +43,12 @@ button {
   align-items: flex-start;
   justify-content: space-between;
 }
+.flex__gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 :where(.css-dev-only-do-not-override-26rdvq).ant-switch.ant-switch-checked {
   background-color: var(--primary-color) !important;
 }
